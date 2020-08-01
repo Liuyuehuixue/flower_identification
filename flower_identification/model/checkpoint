@@ -1,0 +1,2 @@
+model_checkpoint_path: "E:/python/PycharmProject/flower_identification/model/model.ckpt"
+all_model_checkpoint_paths: "E:/python/PycharmProject/flower_identification/model/model.ckpt"

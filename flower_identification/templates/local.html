@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>花卉识别系统</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/reset.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/supersized.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/style.css')}}">
+
+</head>
+<body>
+<div class="page-container">
+    <h1>上传本机图片</h1>
+
+    <form action="{{ url_for('show') }}" enctype='multipart/form-data' method='POST'>
+        <input type="file" name="file" style="margin-top:20px;"/>
+         <br>
+        <button type="submit" id="uploadBtn">上传</button>
+    </form>
+</div>
+
+    <!-- JS -->
+    <script src="{{url_for('static',filename='assets/js/jquery-1.8.2.min.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/js/supersized.3.2.7.min.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/js/supersized-init.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/js/scripts.js')}}"></script>
+
+
+</body>
+</html>

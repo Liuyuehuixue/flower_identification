@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>花卉识别系统</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/reset.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/supersized.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/style.css')}}">
+
+</head>
+
+
+<body>
+<div class="page-container">
+    <h1>花卉识别</h1>
+
+     <form action="continueUpload"  method='POST'>
+        <button type="submit" id="continueBtn">继续上传</button>
+    </form>
+     <form action="upload"  method='POST'>
+        <button type="submit" id="idenBtn">进行识别</button>
+    </form>
+    <h1>您想要识别的图片是：</h1>
+    <img src="{{ url_for('static', filename= 'assets/img/upload_img/test.jpg',_t=val1) }}" width="200" height="200" alt="你的图片丢失了～"/>
+
+</div>
+
+    <!-- JS -->
+    <script src="{{url_for('static',filename='assets/js/jquery-1.8.2.min.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/js/supersized.3.2.7.min.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/js/supersized-init.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/js/scripts.js')}}"></script>
+
+
+</body>
+</html>
